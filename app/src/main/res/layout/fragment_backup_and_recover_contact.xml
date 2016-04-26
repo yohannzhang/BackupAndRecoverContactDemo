@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context="com.pku.codingma.zhisms.ui.backupAndRecover.BackupAndRecoverContactActivityFragment"
+              tools:showIn="@layout/activity_backup_and_recover_contact"
+              android:gravity="center">
+
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/backup_contact_button"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cpb_textComplete="@string/Complete"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="@string/backup_contact"
+        app:cpb_selectorComplete="@drawable/complete_state_selector"
+        app:cpb_selectorError="@drawable/error_state_selector"/>
+
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/recover_contact_button"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cpb_textComplete="@string/Complete"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="@string/recover_contact"
+        app:cpb_selectorComplete="@drawable/complete_state_selector"
+        app:cpb_selectorError="@drawable/error_state_selector"/>
+
+
+</LinearLayout>
